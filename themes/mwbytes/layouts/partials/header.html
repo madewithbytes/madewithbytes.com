@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <title>{{ .Site.Title }}</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="row">
+        <h3 class="logo">Made with bytes.</h3>
+        <nav>
+          <ul>
+            <li><a href="">Write ups</a></li>
+            <li><a href="">Case studies</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+    </header>

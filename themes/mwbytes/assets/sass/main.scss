@@ -1,0 +1,76 @@
+$title_fonts: 'VT323', Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
+$body_fonts: Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+
+$color_background: #F0F0D8;
+$color_font: #666666;
+$color_a: #B4DEBE;
+$color_b: #77CCA4;
+$color_c: #B4DF37;
+
+body {
+  font-family: $body_fonts;
+  height: 100%;
+  background: $color_background;
+  color: $color_font;
+}
+
+a {
+  text-decoration: none;
+  color: $color_font;
+  padding: 3px 7px;
+  background-color:  $color_a;
+}
+
+a:link,
+a:visited {
+  color: $color_font;
+}
+
+a:hover,
+a:active {
+  background-color:  $color_a;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $title_fonts;
+  font-weight: normal;
+  font-size: 2.8em;
+}
+
+h2, h3, h4, h5 {
+  font-size: 3em;
+}
+
+.wrapper {	 
+  width: 90%;
+  margin: 0 auto 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.row {
+  grid-column: 1 / 3;
+}
+
+header {
+  margin: 2rem 0 0 0;
+  height: 3rem;
+}
+
+.logo {
+  float: left;
+  margin: 0;
+  font-size: 1.6em;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+}

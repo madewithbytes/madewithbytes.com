@@ -1,0 +1,9 @@
+name = "Mwbytes"
+description = ""
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Made with bytes"
+  homepage = "https://madewithbytes.com"
