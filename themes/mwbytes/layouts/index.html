@@ -1,3 +1,9 @@
 {{ partial "header.html" . }}
 <div class="row"><h2>Web development and consultancy</h2></div>
+
+{{ range .Pages }}
+<div class="post">
+  <h3>{{ .Title }}</h3>
+</div>
+{{ end }}
 {{ partial "footer.html" . }}

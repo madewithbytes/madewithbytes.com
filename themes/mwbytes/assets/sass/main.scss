@@ -1,8 +1,8 @@
 $title_fonts: 'VT323', Garamond, 'Hoefler Text', Palatino, 'Palatino Linotype', serif;
 $body_fonts: Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 
-$color_background: #F0F0D8;
-$color_font: #666666;
+$color_primary: #F0F0D8;
+$color_secondary: #666666;
 $color_a: #B4DEBE;
 $color_b: #77CCA4;
 $color_c: #B4DF37;
@@ -10,20 +10,20 @@ $color_c: #B4DF37;
 body {
   font-family: $body_fonts;
   height: 100%;
-  background: $color_background;
-  color: $color_font;
+  background: $color_primary;
+  color: $color_secondary;
 }
 
 a {
   text-decoration: none;
-  color: $color_font;
+  color: $color_secondary;
   padding: 3px 7px;
   background-color:  $color_a;
 }
 
 a:link,
 a:visited {
-  color: $color_font;
+  color: $color_secondary;
 }
 
 a:hover,
@@ -41,7 +41,7 @@ h2, h3, h4, h5 {
   font-size: 3em;
 }
 
-.wrapper {	 
+.wrapper {
   width: 90%;
   margin: 0 auto 0 auto;
   display: grid;
@@ -73,4 +73,17 @@ nav ul {
 
 nav li {
   display: inline;
+}
+
+
+.post {
+    height: 300px;
+    margin: 0.2rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.post h3 {
+    height: 300px;
+    color: $color_primary;
 }
