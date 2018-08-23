@@ -7,6 +7,8 @@ $color_a: #B4DEBE;
 $color_b: #77CCA4;
 $color_c: #B4DF37;
 
+$small_screen: "only screen and (max-width: 600px)";
+
 body {
   font-family: $body_fonts;
   height: 100%;
@@ -46,6 +48,10 @@ h2, h3, h4, h5 {
   margin: 0 auto 0 auto;
   display: grid;
   grid-template-columns: 50% 50%;
+
+  @media #{$small_screen} {
+      display: block;
+  }
 }
 
 .row {
@@ -77,7 +83,7 @@ nav li {
 
 
 .post {
-    height: 300px;
+    min-height: 20rem;
     margin: 0.2rem;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.5);
