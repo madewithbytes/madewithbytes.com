@@ -14,6 +14,7 @@ body {
   height: 100%;
   background: $color_primary;
   color: $color_secondary;
+  line-height: 1.8rem;
 }
 
 a {
@@ -43,8 +44,14 @@ h2, h3, h4, h5 {
   font-size: 3em;
 }
 
+pre {
+  padding: 2rem;
+  overflow: scroll;
+}
+
 .wrapper {
   width: 90%;
+  max-width: 62rem;
   margin: 0 auto 0 auto;
   display: grid;
   grid-template-columns: 50% 50%;
