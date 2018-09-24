@@ -1,0 +1,11 @@
+{
+  "name": "madewithbytes.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:madewithbytes/madewithbytes.com.git",
+  "author": "Alfredo Aguirre <alfredo@madewithbyt.es>",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.14.0"
+  }
+}
