@@ -107,9 +107,13 @@ nav li {
 
 .post {
     min-height: 20rem;
+    min-width: 15rem;
     margin: 0.2rem;
     padding: 1rem;
-    background: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .post h3 {
