@@ -4,6 +4,7 @@ title: The 3 environments that will save your life someday.
 date: 2013-02-17T00:00:00-00:00
 description: Web applications can be complex and error prone (due the complexity). Using a three different environments such as Development, Staging and Production with meaningful tests will help to polish your application into a better product before it is released.
 summary: Web applications can be complex and error prone (due the complexity). Using a three different environments such as Development, Staging and Production with meaningful tests will help to polish your application into a better product before it is released.
+image: /images/posts/penguins.jpg
 author: Alfredo Aguirre
 published: true
 ---

@@ -4,7 +4,8 @@ title: The deployment black box, Mercurio
 date: 2013-02-19T00:00:00-00:00
 slug: mercurio-the-deployment-black-box
 description: Mercurio is a set of components designed to deploy or run a test suite a message to the host and perform an action with the push of a button in a black box, while encouraging good development practices.
-summary: Mercurio is a set of components designed to transmit a message to the host and perform an action with the push of a button in a black box, while encouraging good development practices.
+summary: Mercurio is a set of components designed to transmit a message to the host and perform an action with the push of a button in a black box, while encouraging good development practices.a
+image: /images/posts/mercurio-explained.jpg
 author: Alfredo Aguirre
 published: true
 ---

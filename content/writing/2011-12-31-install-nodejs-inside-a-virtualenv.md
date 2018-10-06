@@ -4,6 +4,7 @@ title: Install node.js and coffescript inside a python virtualenv
 date: 2011-12-31T00:00:00-00:00
 description: The importance of being a lazy developer
 summary: If you want to use coffee-script or node.js into a project using python virtual environments without having to fiddle with your entire system, here is a quick guide on how to do it.
+image: /images/posts/java-script.png
 author: Alfredo Aguirre
 published: true
 ---

@@ -4,6 +4,7 @@ date: 2011-07-22T00:00:00-00:00
 slug: the-importance-of-being-a-lazy-developer
 description: The importance of being a lazy developer
 summary: Working with creative agences quick turn arounds and time sensitive deadlines are always there. To deliver products from the technical side of things there are tasks that are performed once or several times. It is always useful to have stack of tools that help to "hit the ground running"
+image: /images/posts/robots.jpg
 author: Alfredo Aguirre
 published: true
 ---

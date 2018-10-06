@@ -2,7 +2,7 @@
 <div class="row"><h2>Web development and consultancy</h2></div>
 
 {{ range .Pages }}
-<div class="post">
+<div class="post" data-bg="{{ .Params.image }}">
   <h3>
     <a href="{{ .Permalink }}">{{ .Title }}</a>
   </h3>
