@@ -4,8 +4,8 @@
     <title>{{ .Site.Title }}</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
-    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}<link rel="stylesheet" href="{{ $style.Permalink }}">
-    {{ $syntax := resources.Get "css/syntax.css" | resources.Minify | resources.Fingerprint }}<link rel="stylesheet" href="{{ $syntax.Permalink }}">
+    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{ $syntax := resources.Get "css/syntax.css" | resources.Minify | resources.Fingerprint }}<link rel="stylesheet" href="{{ $syntax.RelPermalink }}">
 </head>
 <body>
   <div class="wrapper">
