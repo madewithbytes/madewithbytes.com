@@ -248,7 +248,7 @@ production: fab production deploy:confirmation=False
   <em>Q: Has it been completely demagnetised?</em>  <br>
   A: I'll give my answer in a video form.<br>
   <div class="youtube">
-      <iframe width="100%" height="100%" src="http://www.youtube.com/embed/iDbyYGrswtg" frameborder="0" allowfullscreen></iframe>
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/iDbyYGrswtg" frameborder="0" allowfullscreen></iframe>
   </div>
 </p>
 
