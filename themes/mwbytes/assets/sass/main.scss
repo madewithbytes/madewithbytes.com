@@ -108,16 +108,19 @@ nav li {
 .post {
     min-height: 20rem;
     min-width: 15rem;
-    margin: 0.2rem;
+    margin: 0.3rem;
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    @media #{$small_screen} {
+      margin: 0;
+  }
 }
 
 .post h3 {
-    height: 300px;
+    height: 15rem;
     color: $color_primary;
 }
 
