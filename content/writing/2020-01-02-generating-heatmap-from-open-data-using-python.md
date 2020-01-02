@@ -258,4 +258,6 @@ Available values: {'Sin poblacion hablante de lengua indigena', 'De 2,500 a 4,99
 <p style="font-size: 2em;padding: 0 3em;"><i>"Maybe the real treasure was the friends we made along the way"</i></p>
 
 <h5>Footnotes</h5>
-<p id="open-data">1. Open data sites in alphabetical order <a href="https://datos.gob.mx/">Mexico</a> and <a href="https://data.gov.uk/">United Kingdom</a><p>
+<p id="open-data">
+1. Open data sites in reverse alphabetical order <a href="https://data.gov.uk/">United Kingdom</a> and <a href="https://datos.gob.mx/">Mexico</a>
+<p>
