@@ -21,10 +21,10 @@ published: true
 </p>
 
 <p>
-    Also in case you are pressed for time or reading pseudo-code might is more your thing.
-    You can totally skip all this and go head straight to the
+    Also, in case you are pressed for time or reading pseudo-code is more your thing,
+    you can totally skip all this and go head straight to the
     <a href="https://github.com/madewithbytes/mappa">Github repo</a>,
-    it should contain everything you need to make own adventure <strong>(NO REFUNDS)</strong>.
+    it should contain everything you need to make upirown adventure <strong>(NO REFUNDS)</strong>.
 </p>
 
 <p>OK are they gone? Cool, here we go.</p>
@@ -37,11 +37,11 @@ published: true
   <li><a href="https://seaborn.pydata.org/">Seaborn</a> <i>as the matplotlib sidekick to make it look pretty</i></li>
   <li><a href="https://pandas.pydata.org/">Pandas</a> <i>as the data analyst</i></li>
   <li><a href="https://pypi.org/project/pyshp/">Pyshp</a> <i>as the translator that speaks the language of the shape files</i></li>
-  <li><a>You</a> <i>as the hacker that will make the graphics happen.</i></li>
+  <li><a>You</a> <i>as the hacker that will make the graphics happen</i></li>
 </p>
 
 <p>
-  Once you downloaded and unpacked the zip file make sure to place it at `data/` at the
+  Once you download and unpack the zip file make sure to place it at `data/` at the
   root of the repository. It should look something like this:
 </p>
 
@@ -56,8 +56,8 @@ data/PHLITL_2000
 {{< /highlight >}}
 
 <p>
-    From these files the entry point for for our code is the shape file
-    `data/PHLITL_2000/PHLITL_2000.shp`. Lets sneak peek the file.
+    From these files the entry point for our code is the shape file
+    `data/PHLITL_2000/PHLITL_2000.shp`. Let's get a <a href="https://theoatmeal.com/comics/sneak_peek">sneak peak</a> to look at the file (I'll get my coat).
 </p>
 
 <h2>Introspecting the shape file</h2>
@@ -90,8 +90,8 @@ Shape points (sample): `[(788992.7599999954, 3707437.079667801), (788883.5799999
 {{< /highlight >}}
 
 <p>
-    We are in luck. This is very opportune for our purposes.
-    The shp file contains all the data we need to generate the shapes and also contains
+    We are in luck. This is very convenient for our purposes.
+    The `SHP` file contains all the data we need to generate the shapes and it also contains
     the values to generate the heatmap. YEET! yeet indeed.
 </p>
 
@@ -101,7 +101,8 @@ Shape points (sample): `[(788992.7599999954, 3707437.079667801), (788883.5799999
 <h2>Transform and filter the data</h2>
 
 <p>
-  It would be cool if there was a tool that easily would allow us to query and modify the data in the shape file you say.
+  It would be totally cool if there was a tool that easily allow us to query and
+  modify the data in the shape file you say.
 </p>
 
 <p>
@@ -127,7 +128,7 @@ Available values: {'Sin poblacion hablante de lengua indigena', 'De 2,500 a 4,99
 {{< /highlight >}}
 
 <p>
-    This show the states contained in the data frame and the possible values for each municipality.
+    This shows the states contained in the dataset and their possible values for each municipality.
 </p>
 
 <p>
@@ -148,7 +149,7 @@ Available values: {'Sin poblacion hablante de lengua indigena', 'De 2,500 a 4,99
 
 <p>
     I know what you are thinking, but <strong>where are my graphs?</strong> I came here
-    for the graphs. I hear you, we were grewing to a crescendo.
+    for the graphs. I hear you, we were just about to do exactly that pal.
 </p>
 
 <h2>Filtering and displaying the data per state</h2>
@@ -166,9 +167,15 @@ Available values: {'Sin poblacion hablante de lengua indigena', 'De 2,500 a 4,99
 </p>
 
 <p>
-  Since some of the data is a superset of others instead of assuming whether
-  intensity of the heatmap corresponded to the lower or higher band a different palette
-  was used to indicate this discrepancy. <i>In the face of ambiguity, refuse the temptation to guess.</i>
+  By inspecting the values that the municipalities can have it can be seen that some of those
+  values are a superset of others. e.g. There is a `Less than 2,500` value but there
+  is also a superset `Less than 2,500 and from 2,500 to 4,999`.
+</p>
+<p>
+  So instead of assuming the intensity colour to be used in the heatmap
+  to represent the lower or higher band in the superset a different palette
+  was used to indicate this discrepancy.
+  <i>In the face of ambiguity, refuse the temptation to guess.</i> amirite?
 </p>
 
 <p>
@@ -194,12 +201,12 @@ Available values: {'Sin poblacion hablante de lengua indigena', 'De 2,500 a 4,99
 <img src="/images/posts/oaxaca-full-map.png" alt="Oaxaca state heatmap." />
 
 <p>
-    Cool, but still is not quite there yet.
+    Cool, but it's still is not quite there yet.
 </p>
 
 <p>
     Rendering all the municipalities adds a bit of noise to the map and doesn't quite
-    show the story we want to tell. The number of native speakers per municipality in
+    show the story we want to tell: The number of native speakers per municipality in
     Oaxaca state. Let's fix that.
 </p>
 
@@ -229,25 +236,26 @@ Available values: {'Sin poblacion hablante de lengua indigena', 'De 2,500 a 4,99
 
 
 <p>
-  And there you have it, a zoomed in version of the estate showing the Oaxaca state.
+  And there you have it, a zoomed-in graphic showing the Oaxaca state and its municipalities colour coded based on the number of native language speakers.
 </p>
 
 <p>
-    This is a bit better but there are a few things missing, such as the heatmap legends,
-    description of the heatmap, etc. Unfortunately the time for this episode has flown by
+    This is a bit better but there are a few things missing, such as the heatmap legends
+    and its own descriptions. Unfortunately the time for this episode has flown by
     so we'll need to improve on this code another time.
 </p>
 
 <p>
-  This is a broadstrokes what is needed to generate a heatmap. A more complete code
+  This is in broad-strokes what is needed to generate a heatmap. A more complete code
   example is available in the <a href="https://github.com/madewithbytes/mappa">Github repo</a>.
   Where the author took more creative liberties, hopefully the pseudocode is readable and
   won't consume too many cognitive units.
 </p>
 
 <p>
-    In case you are curious to see what the other heatmap look for the other states the repo has a
-    cache of all the generated states in the <a href="https://github.com/madewithbytes/mappa/tree/master/heatmaps">heatmap directory</a>.
+    In case you are curious to see what the other generated heatmaps look like for the
+    other states the repo has a cache of them in the
+    <a href="https://github.com/madewithbytes/mappa/tree/master/heatmaps">heatmap directory</a>.
 </p>
 
 <p>Phew, this is it for now. I hope you had as much fun as I did.</p>
