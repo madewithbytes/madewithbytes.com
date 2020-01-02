@@ -245,6 +245,11 @@ Available values: {'Sin poblacion hablante de lengua indigena', 'De 2,500 a 4,99
   won't consume too many cognitive units.
 </p>
 
+<p>
+    In case you are curious to see what the other heatmap look for the other states the repo has a
+    cache of all the generated states in the <a href="https://github.com/madewithbytes/mappa/tree/master/heatmaps">heatmap directory</a>.
+</p>
+
 <p>Phew, this is it for now. I hope you had as much fun as I did.</p>
 
 <h2>FAQ</h2>
