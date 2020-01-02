@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 <div class="row"><h2>Web development and consultancy, London UK</h2></div>
 
-{{ range .Pages }}
+{{ range .Site.RegularPages }}
 <div class="post" data-bg="{{ .Params.image }}">
   <h3>
     <a href="{{ .Permalink }}">{{ .Title }}</a>

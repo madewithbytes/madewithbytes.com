@@ -2,3 +2,7 @@ baseURL = "https://madewithbytes.com"
 languageCode = "en-gb"
 title = "Made with bytes - Web Development and Consultancy, London UK"
 theme = "mwbytes"
+[params]
+    mainSections = ["writing"]
+[markup.goldmark.renderer]
+    unsafe= true
