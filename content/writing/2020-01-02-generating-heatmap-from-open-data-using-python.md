@@ -24,7 +24,7 @@ published: true
     Also, in case you are pressed for time or reading pseudo-code is more your thing,
     you can totally skip all this and go head straight to the
     <a href="https://github.com/madewithbytes/mappa">Github repo</a>,
-    it should contain everything you need to make upirown adventure <strong>(NO REFUNDS)</strong>.
+    it should contain everything you need to make your own adventure <strong>(NO REFUNDS)</strong>.
 </p>
 
 <p>OK are they gone? Cool, here we go.</p>
@@ -162,7 +162,7 @@ Available values: {'Sin poblacion hablante de lengua indigena', 'De 2,500 a 4,99
 
 <p>
   A good splitting point for this dataset is a state which contains several
-  municipalities. So let's get the crew do that. We'll use the analised data
+  municipalities. So let's get the crew do that. We'll use the analysed data
   to generate a values configuration for the colours of the heatmap.
 </p>
 
